@@ -140,6 +140,8 @@ h3 {
   .transport-county .transport-gallery .transport-gallery__img {
     margin-left: 35px; }
     .transport-county .transport-gallery .transport-gallery__img img {
+      max-width: 420px;
+      max-height: 270px;
       width: 100%; }
   .transport-county .transport-gallery .transport-gallery__switch .arrow-btn {
     position: absolute;
@@ -258,6 +260,30 @@ h3 {
     .about .about-cards__content .about-cards__box span:last-child {
       font-size: 12px;
       margin-top: 10px; }
+  .about .about-cards__content #slides {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none; }
+    .about .about-cards__content #slides .slide {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      z-index: 1;
+      -webkit-transition: opacity 1s;
+      -moz-transition: opacity 1s;
+      -o-transition: opacity 1s;
+      transition: opacity 1s; }
+      .about .about-cards__content #slides .slide img {
+        width: 100%; }
+    .about .about-cards__content #slides .showing {
+      opacity: 1;
+      z-index: 2; }
 
 .location {
   background: url("../img/maps.jpg") no-repeat center/cover; }
