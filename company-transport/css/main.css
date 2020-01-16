@@ -1,0 +1,368 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  color: #fff;
+  margin: 0;
+  padding: 0; }
+
+a {
+  color: #fff;
+  text-decoration: none; }
+  a:hover {
+    color: #fff;
+    text-decoration: none; }
+
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+div, p, form, input, a, span, button {
+  box-sizing: border-box; }
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  line-height: 1.3em; }
+
+h1 {
+  font-size: 64px;
+  letter-spacing: 0.06em; }
+
+h2 {
+  font-size: 40px; }
+
+h3 {
+  font-size: 18px; }
+
+.padding-col {
+  padding-right: 2px;
+  padding-left: 2px; }
+
+.head-top {
+  background: #C8A35F;
+  padding: 16px 0;
+  font-size: 12px; }
+  .head-top span {
+    text-transform: uppercase; }
+
+.head-nav {
+  background: #2F343A;
+  padding: 25px 0;
+  position: relative;
+  /* -- HAMBURGER -- */ }
+  .head-nav .head-geolocation:before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 1px;
+    height: 45px;
+    background: #F2F2F2; }
+  .head-nav .head-geolocation .head-geolocation__link {
+    margin-left: 10px; }
+  .head-nav .head-geolocation a i {
+    font-size: 21px;
+    color: #C8A35F;
+    margin-right: 7px; }
+  .head-nav .head-geolocation a:hover {
+    color: #C8A35F; }
+  .head-nav .head-menu {
+    text-align: end; }
+    .head-nav .head-menu .head-menu__list {
+      justify-content: flex-end; }
+      .head-nav .head-menu .head-menu__list .head-menu__link a {
+        padding: 5px 30px; }
+        .head-nav .head-menu .head-menu__list .head-menu__link a:hover {
+          color: #C8A35F; }
+  .head-nav .hamburger {
+    margin-top: 10px; }
+    .head-nav .hamburger #menuToggle span {
+      display: block;
+      width: 35px;
+      height: 3px;
+      background: #fff;
+      border-radius: 5px;
+      margin: auto;
+      margin-bottom: 6px; }
+
+.header-home {
+  background: url("../img/fon-header.jpg") no-repeat center/cover;
+  padding: 200px 0 260px; }
+  .header-home p {
+    max-width: 750px;
+    margin: 45px auto; }
+
+.section-title {
+  position: relative;
+  padding-top: 40px; }
+  .section-title:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90px;
+    height: 6px;
+    background: #C8A35F; }
+
+.transport-county {
+  padding: 120px 0 130px;
+  position: relative; }
+  .transport-county:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 34%;
+    width: 30%;
+    height: 100%;
+    background: #2F343A;
+    z-index: -1; }
+  .transport-county:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #393F47;
+    z-index: -2; }
+  .transport-county .county p {
+    max-width: 400px;
+    letter-spacing: .03em;
+    margin: 30px 0 50px; }
+  .transport-county .county .link {
+    display: inline-block;
+    background: #C8A35F;
+    padding: 18px 48px 19px; }
+    .transport-county .county .link:hover {
+      background: #d9b22c; }
+  .transport-county .transport-gallery .transport-gallery__img {
+    margin-left: 35px; }
+    .transport-county .transport-gallery .transport-gallery__img img {
+      width: 100%; }
+  .transport-county .transport-gallery .transport-gallery__switch .arrow-btn {
+    position: absolute;
+    right: 0;
+    display: flex; }
+  .transport-county .transport-gallery .transport-gallery__switch .btn-next {
+    top: 0; }
+    .transport-county .transport-gallery .transport-gallery__switch .btn-next span {
+      margin-right: 40px; }
+  .transport-county .transport-gallery .transport-gallery__switch .btn-prev {
+    bottom: 0; }
+    .transport-county .transport-gallery .transport-gallery__switch .btn-prev span {
+      margin-left: 40px; }
+  .transport-county .transport-gallery .transport-gallery__switch .arrow-next {
+    transform: rotate(45deg); }
+  .transport-county .transport-gallery .transport-gallery__switch .arrow-prev {
+    transform: rotate(225deg); }
+  .transport-county .transport-gallery .transport-gallery__switch .arrow {
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box; }
+    .transport-county .transport-gallery .transport-gallery__switch .arrow::before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      border-width: 3px 3px 0 0;
+      border-style: solid;
+      border-color: #fafafa;
+      transition: .2s ease;
+      display: block;
+      transform-origin: 100% 0; }
+    .transport-county .transport-gallery .transport-gallery__switch .arrow:after {
+      content: '';
+      display: block;
+      position: relative;
+      top: -100%;
+      width: 100%;
+      height: 100%;
+      border-width: 0 3px 0 0;
+      border-style: solid;
+      border-color: #fafafa;
+      transform-origin: 100% 0;
+      transition: .2s ease; }
+    .transport-county .transport-gallery .transport-gallery__switch .arrow:hover::after {
+      transform: rotate(45deg);
+      border-color: #C8A35F;
+      height: 200%;
+      margin-top: 2px; }
+    .transport-county .transport-gallery .transport-gallery__switch .arrow:hover::before {
+      border-color: #C8A35F;
+      transform: scale(0.9); }
+
+.services {
+  padding: 120px 0;
+  background: #2F343A; }
+  .services .cards-box {
+    margin-top: 60px; }
+  .services .top-indent {
+    margin-top: 4px; }
+  .services .services-cards {
+    background: #393F47;
+    padding: 35px 20px;
+    text-align: center;
+    transition: all .5s; }
+    .services .services-cards:hover {
+      background: #C8A35F; }
+    .services .services-cards:hover .services-cards__icon {
+      background: #fff;
+      color: #4e4f50; }
+    .services .services-cards .services-cards__icon {
+      padding: 15px 20px;
+      color: #fff;
+      font-size: 30px;
+      transform: rotate(-50deg);
+      border-radius: 50%;
+      display: inline-block; }
+
+.about {
+  padding: 80px 0 200px;
+  position: relative; }
+  .about:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 34%;
+    width: 30%;
+    height: 80%;
+    background: #393F47;
+    z-index: -1; }
+  .about:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #2F343A;
+    z-index: -2; }
+  .about .about-info p {
+    font-size: 16px;
+    letter-spacing: .03em;
+    margin-top: 30px; }
+  .about .about-cards__content img {
+    width: 100%;
+    height: 176px; }
+  .about .about-cards__content .about-cards__box {
+    padding: 0 20px 25px;
+    background: #fff; }
+    .about .about-cards__content .about-cards__box span {
+      display: block;
+      color: #2F343A;
+      text-align: center; }
+    .about .about-cards__content .about-cards__box span:first-child {
+      font-size: 64px;
+      font-weight: 700; }
+    .about .about-cards__content .about-cards__box span:last-child {
+      font-size: 12px;
+      margin-top: 10px; }
+
+.location {
+  background: url("../img/maps.jpg") no-repeat center/cover; }
+  .location #map {
+    width: 100%;
+    height: 400px; }
+
+.footer {
+  background: #C8A35F;
+  padding: 35px 0 20px; }
+  .footer a, .footer p {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 10px; }
+  .footer a:hover {
+    color: #000; }
+
+/*-----------------MEDIA QUERIES-----------------*/
+/*-------- 992-1200px col-md-------*/
+@media screen and (max-width: 1200px) {
+  .head-nav .head-menu .head-menu__list .head-menu__link a {
+    padding: 5px 15px; } }
+
+/*-------- 768-992px col-md-------*/
+@media screen and (max-width: 992px) {
+  h1 {
+    font-size: 55px; }
+  .transport-county:after {
+    left: 31%;
+    width: 40%; }
+  .transport-county .indent-top {
+    margin-top: 70px; }
+    .transport-county .indent-top .transport-gallery .transport-gallery__switch .arrow-btn {
+      right: 40px; }
+    .transport-county .indent-top .transport-gallery .transport-gallery__switch .btn-next {
+      top: 80px; }
+    .transport-county .indent-top .transport-gallery .transport-gallery__switch .btn-prev {
+      bottom: 40px; }
+  .services .top-indent {
+    margin-top: 1px; }
+  .services .services-cards {
+    margin-bottom: 3px; }
+  .about:after {
+    top: 40px;
+    left: 31%;
+    width: 40%; }
+  .footer .footer-phone, .footer .footer-copy {
+    margin-top: 20px; }
+  .location #map {
+    height: 300px; } }
+
+/*-------- 576-768px col-md-------*/
+@media screen and (max-width: 768px) {
+  .transport-county:after {
+    left: 25%;
+    width: 50%; }
+  .transport-county .indent-top .transport-gallery .transport-gallery__img {
+    margin-left: 0;
+    max-width: 400px; }
+  .about:after {
+    left: 25%;
+    width: 50%; } }
+
+/*-------- 320-576px col-------*/
+@media screen and (max-width: 576px) {
+  h1 {
+    font-size: 40px; }
+  h2 {
+    font-size: 30px; }
+  .head-top {
+    padding: 8px 0; }
+  .head-nav .head-logo img {
+    max-width: 120px; }
+  .head-nav .head-geolocation {
+    display: flex;
+    align-items: center;
+    line-height: 1;
+    font-size: 14px; }
+    .head-nav .head-geolocation .head-geolocation__link {
+      margin-left: 0; }
+  .transport-county {
+    padding: 120px 0 130px; }
+    .transport-county .county .link {
+      padding: 15px 35px 14px; }
+    .transport-county .indent-top .transport-gallery .transport-gallery__img img {
+      width: 100%; }
+    .transport-county .indent-top .transport-gallery .transport-gallery__switch .btn-next {
+      top: inherit;
+      bottom: -45px;
+      right: 70px; }
+      .transport-county .indent-top .transport-gallery .transport-gallery__switch .btn-next span {
+        display: none; }
+    .transport-county .indent-top .transport-gallery .transport-gallery__switch .btn-prev {
+      left: 70px;
+      bottom: -45px; }
+      .transport-county .indent-top .transport-gallery .transport-gallery__switch .btn-prev span {
+        display: none; }
+  .services .services-cards {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 3px; }
+  .about {
+    padding: 80px 0 200px; }
+    .about .about-cards__content img {
+      height: auto;
+      margin: 2px 0; } }
+
+/*# sourceMappingURL=main.css.map */
