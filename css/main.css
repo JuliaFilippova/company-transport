@@ -31,7 +31,8 @@ h1 {
   letter-spacing: 0.06em; }
 
 h2 {
-  font-size: 40px; }
+  font-size: 40px;
+  text-shadow: 1px 0px 4px black; }
 
 h3 {
   font-size: 18px; }
@@ -42,7 +43,7 @@ h3 {
 
 .head-top {
   background: #C8A35F;
-  padding: 16px 0;
+  padding: 10px 0;
   font-size: 12px; }
   .head-top span {
     text-transform: uppercase; }
@@ -88,8 +89,14 @@ h3 {
       margin-bottom: 6px; }
 
 .header-home {
-  background: url("../img/fon-header.jpg") no-repeat center/cover;
-  padding: 200px 0 260px; }
+  background-image: url("../img/bg-trant.jpg");
+  background-repeat: no-repeat bottom;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 300px 0 260px; }
+  .header-home .header-bg {
+    width: 100%;
+    height: 100%; }
   .header-home p {
     max-width: 750px;
     margin: 45px auto; }
@@ -137,66 +144,86 @@ h3 {
     padding: 18px 48px 19px; }
     .transport-county .county .link:hover {
       background: #d9b22c; }
-  .transport-county .transport-gallery .transport-gallery__img {
-    margin-left: 35px; }
-    .transport-county .transport-gallery .transport-gallery__img img {
-      max-width: 420px;
-      max-height: 270px;
-      width: 100%; }
-  .transport-county .transport-gallery .transport-gallery__switch .arrow-btn {
+  .transport-county .dots-box {
     position: absolute;
-    right: 0;
+    left: 32%;
+    bottom: 20px;
     display: flex; }
-  .transport-county .transport-gallery .transport-gallery__switch .btn-next {
-    bottom: 40px; }
-    .transport-county .transport-gallery .transport-gallery__switch .btn-next span {
-      margin-left: 40px; }
-  .transport-county .transport-gallery .transport-gallery__switch .btn-prev {
-    top: 40px; }
-    .transport-county .transport-gallery .transport-gallery__switch .btn-prev span {
-      margin-right: 40px; }
-  .transport-county .transport-gallery .transport-gallery__switch .arrow-next {
-    transform: rotate(45deg); }
-  .transport-county .transport-gallery .transport-gallery__switch .arrow-prev {
-    transform: rotate(225deg); }
-  .transport-county .transport-gallery .transport-gallery__switch .arrow {
-    width: 20px;
-    height: 20px;
-    box-sizing: border-box; }
-    .transport-county .transport-gallery .transport-gallery__switch .arrow::before {
-      content: '';
-      width: 100%;
-      height: 100%;
-      border-width: 3px 3px 0 0;
-      border-style: solid;
-      border-color: #fafafa;
-      transition: .2s ease;
+    .transport-county .dots-box .dot {
       display: block;
-      transform-origin: 100% 0; }
-    .transport-county .transport-gallery .transport-gallery__switch .arrow:after {
-      content: '';
-      display: block;
-      position: relative;
-      top: -100%;
-      width: 100%;
-      height: 100%;
-      border-width: 0 3px 0 0;
-      border-style: solid;
-      border-color: #fafafa;
-      transform-origin: 100% 0;
-      transition: .2s ease; }
-    .transport-county .transport-gallery .transport-gallery__switch .arrow:hover::after {
-      transform: rotate(45deg);
-      border-color: #C8A35F;
-      height: 200%;
-      margin-top: 2px; }
-    .transport-county .transport-gallery .transport-gallery__switch .arrow:hover::before {
-      border-color: #C8A35F;
-      transform: scale(0.9); }
+      cursor: pointer;
+      height: 11px;
+      width: 11px;
+      border-radius: 50%;
+      margin: 0 2px;
+      background-color: #8c8c8c7a; }
+    .transport-county .dots-box .active, .transport-county .dots-box .dot:hover {
+      background-color: #c8a35f85; }
+  .transport-county .transport-gallery {
+    margin-top: 40px; }
+    .transport-county .transport-gallery .transport-gallery__img {
+      margin-left: 35px; }
+      .transport-county .transport-gallery .transport-gallery__img img {
+        max-width: 420px;
+        max-height: 270px;
+        width: 100%; }
+    .transport-county .transport-gallery .transport-gallery__switch .arrow-btn {
+      position: absolute;
+      right: 0;
+      display: flex; }
+    .transport-county .transport-gallery .transport-gallery__switch .btn-prev {
+      bottom: 40px; }
+      .transport-county .transport-gallery .transport-gallery__switch .btn-prev span {
+        margin-left: 40px; }
+    .transport-county .transport-gallery .transport-gallery__switch .btn-next {
+      top: 40px; }
+      .transport-county .transport-gallery .transport-gallery__switch .btn-next span {
+        margin-right: 40px; }
+    .transport-county .transport-gallery .transport-gallery__switch .arrow-prev {
+      transform: rotate(45deg); }
+    .transport-county .transport-gallery .transport-gallery__switch .arrow-next {
+      transform: rotate(225deg); }
+    .transport-county .transport-gallery .transport-gallery__switch .arrow {
+      width: 20px;
+      height: 20px;
+      box-sizing: border-box; }
+      .transport-county .transport-gallery .transport-gallery__switch .arrow::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        border-width: 3px 3px 0 0;
+        border-style: solid;
+        border-color: #fafafa;
+        transition: .2s ease;
+        display: block;
+        transform-origin: 100% 0; }
+      .transport-county .transport-gallery .transport-gallery__switch .arrow:after {
+        content: '';
+        display: block;
+        position: relative;
+        top: -100%;
+        width: 100%;
+        height: 100%;
+        border-width: 0 3px 0 0;
+        border-style: solid;
+        border-color: #fafafa;
+        transform-origin: 100% 0;
+        transition: .2s ease; }
+      .transport-county .transport-gallery .transport-gallery__switch .arrow:hover::after {
+        transform: rotate(45deg);
+        border-color: #C8A35F;
+        height: 200%;
+        margin-top: 2px; }
+      .transport-county .transport-gallery .transport-gallery__switch .arrow:hover::before {
+        border-color: #C8A35F;
+        transform: scale(0.9); }
 
 .services {
-  padding: 120px 0;
-  background: #2F343A; }
+  padding: 100px 0 70px;
+  background-image: url("https://www.nord-ostsee-automobile.de/fileadmin/Redaktion/Visuals/Trucks/Trucks-1600x640.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; }
   .services .cards-box {
     margin-top: 60px; }
   .services .top-indent {
@@ -208,9 +235,6 @@ h3 {
     transition: all .5s; }
     .services .services-cards:hover {
       background: #C8A35F; }
-    .services .services-cards:hover .services-cards__icon {
-      background: #fff;
-      color: #4e4f50; }
     .services .services-cards .services-cards__icon {
       padding: 15px 20px;
       color: #fff;
@@ -218,6 +242,15 @@ h3 {
       transform: rotate(-50deg);
       border-radius: 50%;
       display: inline-block; }
+      .services .services-cards .services-cards__icon .fa-truck {
+        transform: rotateZ(48deg); }
+
+#air-services {
+  padding: 150px 0 70px;
+  background-image: url("https://kipmu.ru/wp-content/uploads/pknszgn.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; }
 
 .about {
   padding: 80px 0 200px;
@@ -286,10 +319,16 @@ h3 {
       z-index: 2; }
 
 .location {
-  background: url("../img/maps.jpg") no-repeat center/cover; }
+  padding: 60px 0;
+  background-image: url("https://www.uvs.in.ua/wp-content/uploads/2018/03/Amberg-Loglay-City-Logistics-1-1.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; }
   .location #map {
-    width: 100%;
-    height: 400px; }
+    background: url("../img/map.png") no-repeat center/cover;
+    width: 80%;
+    height: 500px;
+    margin: auto; }
 
 .footer {
   background: #C8A35F;
