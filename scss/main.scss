@@ -119,10 +119,11 @@ $bgColorGold: #C8A35F;
 	}
 }
 .header-home {
-	background-image:url('../img/bg-trant.jpg');
-	background-repeat:no-repeat;
-	background-attachment:fixed;
-	background-size: cover;
+	background:url('../img/bg-trant.jpg')no-repeat center /cover;
+	// background-image:url('../img/bg-trant.jpg');
+	// background-repeat:no-repeat;
+	// background-attachment:fixed;
+	// background-size: cover;
 	padding: 300px 0 260px;
 	.header-bg {
 		width: 100%;
@@ -411,15 +412,10 @@ $bgColorGold: #C8A35F;
 	}
 }
 .location {
-	padding: 60px 0;
-	background-image:url('https://anews.az/file/pic/xeber/2018-06/1530171926_1.jpg');
-	background-repeat:no-repeat;
-	background-attachment:fixed;
-	background-size: cover;
 	#map {
 		background: url('../img/map.png') no-repeat center /cover;
 		width: 100%;
-		height: 400px;
+		height: 500px;
 		margin: auto;
 	}
 }

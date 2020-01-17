@@ -92,10 +92,7 @@ h3 {
       margin-bottom: 6px; }
 
 .header-home {
-  background-image: url("../img/bg-trant.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+  background: url("../img/bg-trant.jpg") no-repeat center/cover;
   padding: 300px 0 260px; }
   .header-home .header-bg {
     width: 100%;
@@ -322,17 +319,11 @@ h3 {
       opacity: 1;
       z-index: 2; }
 
-.location {
-  padding: 60px 0;
-  background-image: url("https://anews.az/file/pic/xeber/2018-06/1530171926_1.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover; }
-  .location #map {
-    background: url("../img/map.png") no-repeat center/cover;
-    width: 100%;
-    height: 400px;
-    margin: auto; }
+.location #map {
+  background: url("../img/map.png") no-repeat center/cover;
+  width: 100%;
+  height: 500px;
+  margin: auto; }
 
 .footer {
   background: #C8A35F;
