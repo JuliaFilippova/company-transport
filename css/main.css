@@ -148,13 +148,13 @@ h3 {
     right: 0;
     display: flex; }
   .transport-county .transport-gallery .transport-gallery__switch .btn-next {
-    top: 0; }
+    bottom: 40px; }
     .transport-county .transport-gallery .transport-gallery__switch .btn-next span {
-      margin-right: 40px; }
-  .transport-county .transport-gallery .transport-gallery__switch .btn-prev {
-    bottom: 0; }
-    .transport-county .transport-gallery .transport-gallery__switch .btn-prev span {
       margin-left: 40px; }
+  .transport-county .transport-gallery .transport-gallery__switch .btn-prev {
+    top: 40px; }
+    .transport-county .transport-gallery .transport-gallery__switch .btn-prev span {
+      margin-right: 40px; }
   .transport-county .transport-gallery .transport-gallery__switch .arrow-next {
     transform: rotate(45deg); }
   .transport-county .transport-gallery .transport-gallery__switch .arrow-prev {
