@@ -190,15 +190,15 @@ $bgColorGold: #C8A35F;
 				display: flex;
 			}
 			.btn-next {
-				top: 0;
+				bottom: 40px;
 				span {
-					margin-right: 40px;
+					margin-left: 40px;
 				}
 			}
 			.btn-prev {
-				bottom: 0;
+				top: 40px;
 				span {
-					margin-left: 40px;
+					margin-right: 40px;
 				}
 			}
 			.arrow-next {
