@@ -47,6 +47,9 @@ h3 {
   font-size: 12px; }
   .head-top span {
     text-transform: uppercase; }
+    .head-top span:hover {
+      color: #000;
+      cursor: pointer; }
 
 .head-nav {
   background: #2F343A;
@@ -90,7 +93,7 @@ h3 {
 
 .header-home {
   background-image: url("../img/bg-trant.jpg");
-  background-repeat: no-repeat bottom;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   padding: 300px 0 260px; }
@@ -169,7 +172,7 @@ h3 {
         width: 100%; }
     .transport-county .transport-gallery .transport-gallery__switch .arrow-btn {
       position: absolute;
-      right: 0;
+      right: 25px;
       display: flex; }
     .transport-county .transport-gallery .transport-gallery__switch .btn-prev {
       bottom: 40px; }
@@ -279,14 +282,15 @@ h3 {
     margin-top: 30px; }
   .about .about-cards__content img {
     width: 100%;
-    height: 176px; }
+    height: 190px; }
   .about .about-cards__content .about-cards__box {
-    padding: 0 20px 25px;
+    padding: 0 10px 35px;
     background: #fff; }
     .about .about-cards__content .about-cards__box span {
       display: block;
       color: #2F343A;
-      text-align: center; }
+      text-align: center;
+      font-size: 22px; }
     .about .about-cards__content .about-cards__box span:first-child {
       font-size: 64px;
       font-weight: 700; }
@@ -320,14 +324,14 @@ h3 {
 
 .location {
   padding: 60px 0;
-  background-image: url("https://www.uvs.in.ua/wp-content/uploads/2018/03/Amberg-Loglay-City-Logistics-1-1.jpg");
+  background-image: url("https://anews.az/file/pic/xeber/2018-06/1530171926_1.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover; }
   .location #map {
     background: url("../img/map.png") no-repeat center/cover;
-    width: 80%;
-    height: 500px;
+    width: 100%;
+    height: 400px;
     margin: auto; }
 
 .footer {
