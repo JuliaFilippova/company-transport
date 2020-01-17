@@ -302,6 +302,7 @@ $bgColorGold: #C8A35F;
 		padding: 35px 20px;
 		text-align: center;
 		transition: all .5s;
+		min-height: 195px;
 		&:hover {
 			background: $bgColorGold;
 		}
@@ -360,11 +361,12 @@ $bgColorGold: #C8A35F;
 	.about-cards__content {
 		img {
 			width: 100%;
-			height: 190px;
+			height: 200px;
 		}
 		.about-cards__box {
 			padding: 0 10px 35px;
 			background: #fff;
+			min-height: 200px;
 			span {
 				display: block;
 				color: #2F343A;
@@ -383,7 +385,7 @@ $bgColorGold: #C8A35F;
 		#slides {
 		    position: relative;
 		    width: 100%;
-		    height: 100%;
+		    height: 190px;
 		    padding: 0px;
 		    margin: 0px;
 		    list-style-type: none;
@@ -451,6 +453,9 @@ $bgColorGold: #C8A35F;
 	h1 {
 		font-size: 55px;
 	}
+	.header-home {
+		padding: 200px 0 240px;
+	}
 	.transport-county {
 		&:after {
 		    left: 31%;
@@ -482,10 +487,19 @@ $bgColorGold: #C8A35F;
 		}
 	}
 	.about {
+		padding: 80px 0;
 		&:after {
 			top: 40px;
 		    left: 31%;
 		    width: 40%;
+		}
+		.indent-top {
+			margin-top: 70px;
+		}
+		.about-cards__content {
+			.about-cards__box {
+				margin-top: 2px;
+			}
 		}
 	}
 	.footer {
@@ -511,21 +525,33 @@ $bgColorGold: #C8A35F;
 		}
 		.indent-top {
 			.transport-gallery {
+				margin-top: 0;
 				.transport-gallery__img {
-					margin-left: 0;
-					max-width: 400px;
+					img {
+						width: 100%
+					}
 				}
 				.transport-gallery__switch {
-					// .arrow-btn {
-					// 	right: 40px;
-					// }
-					// .btn-next {
-					// 	top: 80px;
-					// }
-					// .btn-prev {
-					// 	bottom: 40px;
-					// }
+					.btn-next {
+						top: inherit;
+						bottom: -45px;
+						right: 70px;
+						span {
+							display: none;
+						}
+					}
+					.btn-prev {
+						left: 70px;
+						bottom: -45px;
+						span {
+							display: none;
+						}
+					}
 				}
+			}
+			.dots-box {
+				left: 44%;
+				bottom: -44px;
 			}
 		}
 	}
@@ -561,37 +587,14 @@ $bgColorGold: #C8A35F;
 			}
 		}
 	}
+	.header-home {
+		padding: 160px 0;
+	}
 	.transport-county {
 		padding: 120px 0 130px;
 		.county {
 			.link {
 				padding: 15px 35px 14px;
-			}
-		}
-		.indent-top {
-			.transport-gallery {
-				.transport-gallery__img {
-					img {
-						width: 100%
-					}
-				}
-				.transport-gallery__switch {
-					.btn-next {
-						top: inherit;
-						bottom: -45px;
-						right: 70px;
-						span {
-							display: none;
-						}
-					}
-					.btn-prev {
-						left: 70px;
-						bottom: -45px;
-						span {
-							display: none;
-						}
-					}
-				}
 			}
 		}
 	}
@@ -600,15 +603,14 @@ $bgColorGold: #C8A35F;
 			width: 90%;
 			margin: auto;
 			margin-bottom: 3px;
+			padding: 15px 20px;
 		}
 	}
 	.about {
-		padding: 80px 0 200px;
 		.about-info {
 		}
 		.about-cards__content {
 			img {
-				height: auto;
 				margin: 2px 0;
 			}
 			.about-cards__box {
