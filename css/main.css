@@ -224,6 +224,8 @@ h3 {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover; }
+  .services .section-title:after {
+    background: #fff; }
   .services .cards-box {
     margin-top: 60px; }
   .services .top-indent {
@@ -354,20 +356,36 @@ h3 {
     width: 40%; }
   .transport-county .indent-top {
     margin-top: 70px; }
-    .transport-county .indent-top .transport-gallery .transport-gallery__switch .arrow-btn {
-      right: 40px; }
-    .transport-county .indent-top .transport-gallery .transport-gallery__switch .btn-next {
-      top: 80px; }
-    .transport-county .indent-top .transport-gallery .transport-gallery__switch .btn-prev {
-      bottom: 40px; }
+    .transport-county .indent-top .transport-gallery {
+      margin-top: 40px; }
+      .transport-county .indent-top .transport-gallery .transport-gallery__img {
+        margin-left: 100px; }
+        .transport-county .indent-top .transport-gallery .transport-gallery__img img {
+          max-width: 500px;
+          max-height: 300px; }
+        .transport-county .indent-top .transport-gallery .transport-gallery__img .transport-gallery__switch .btn-next {
+          top: inherit;
+          bottom: -45px;
+          right: 70px; }
+          .transport-county .indent-top .transport-gallery .transport-gallery__img .transport-gallery__switch .btn-next span {
+            display: none; }
+        .transport-county .indent-top .transport-gallery .transport-gallery__img .transport-gallery__switch .btn-prev {
+          left: 70px;
+          bottom: -45px; }
+          .transport-county .indent-top .transport-gallery .transport-gallery__img .transport-gallery__switch .btn-prev span {
+            display: none; }
+        .transport-county .indent-top .transport-gallery .transport-gallery__img .dots-box {
+          left: 45%;
+          bottom: -44px; }
   .services .top-indent {
     margin-top: 1px; }
   .services .services-cards {
-    margin-bottom: 3px; }
+    margin-bottom: 3px;
+    min-height: 220px; }
   .about {
     padding: 80px 0; }
     .about:after {
-      top: 40px;
+      top: 75px;
       left: 31%;
       width: 40%; }
     .about .indent-top {
@@ -384,24 +402,28 @@ h3 {
   .transport-county:after {
     left: 25%;
     width: 50%; }
-  .transport-county .indent-top .transport-gallery {
-    margin-top: 0; }
-    .transport-county .indent-top .transport-gallery .transport-gallery__img img {
-      width: 100%; }
-    .transport-county .indent-top .transport-gallery .transport-gallery__switch .btn-next {
-      top: inherit;
-      bottom: -45px;
-      right: 70px; }
-      .transport-county .indent-top .transport-gallery .transport-gallery__switch .btn-next span {
-        display: none; }
-    .transport-county .indent-top .transport-gallery .transport-gallery__switch .btn-prev {
-      left: 70px;
-      bottom: -45px; }
-      .transport-county .indent-top .transport-gallery .transport-gallery__switch .btn-prev span {
-        display: none; }
-  .transport-county .indent-top .dots-box {
-    left: 44%;
-    bottom: -44px; }
+  .transport-county .indent-top {
+    margin-top: 70px; }
+    .transport-county .indent-top .transport-gallery {
+      margin-top: 0; }
+      .transport-county .indent-top .transport-gallery .transport-gallery__img {
+        min-height: 290px; }
+        .transport-county .indent-top .transport-gallery .transport-gallery__img img {
+          width: 100%; }
+      .transport-county .indent-top .transport-gallery .transport-gallery__switch .btn-next {
+        top: inherit;
+        bottom: -45px;
+        right: 70px; }
+        .transport-county .indent-top .transport-gallery .transport-gallery__switch .btn-next span {
+          display: none; }
+      .transport-county .indent-top .transport-gallery .transport-gallery__switch .btn-prev {
+        left: 70px;
+        bottom: -45px; }
+        .transport-county .indent-top .transport-gallery .transport-gallery__switch .btn-prev span {
+          display: none; }
+    .transport-county .indent-top .dots-box {
+      left: 44%;
+      bottom: -44px; }
   .about:after {
     left: 25%;
     width: 50%; } }
