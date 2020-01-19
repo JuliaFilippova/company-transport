@@ -357,26 +357,26 @@ h3 {
   .transport-county .indent-top {
     margin-top: 70px; }
     .transport-county .indent-top .transport-gallery {
-      margin-top: 40px; }
+      margin-top: 0; }
       .transport-county .indent-top .transport-gallery .transport-gallery__img {
-        margin-left: 100px; }
+        margin-left: 150px;
+        min-height: 300px; }
         .transport-county .indent-top .transport-gallery .transport-gallery__img img {
-          max-width: 500px;
-          max-height: 300px; }
-        .transport-county .indent-top .transport-gallery .transport-gallery__img .transport-gallery__switch .btn-next {
-          top: inherit;
-          bottom: -45px;
-          right: 70px; }
-          .transport-county .indent-top .transport-gallery .transport-gallery__img .transport-gallery__switch .btn-next span {
-            display: none; }
-        .transport-county .indent-top .transport-gallery .transport-gallery__img .transport-gallery__switch .btn-prev {
-          left: 70px;
-          bottom: -45px; }
-          .transport-county .indent-top .transport-gallery .transport-gallery__img .transport-gallery__switch .btn-prev span {
-            display: none; }
-        .transport-county .indent-top .transport-gallery .transport-gallery__img .dots-box {
-          left: 45%;
-          bottom: -44px; }
+          width: 100%; }
+      .transport-county .indent-top .transport-gallery .transport-gallery__switch .btn-next {
+        top: inherit;
+        bottom: -45px;
+        right: 70px; }
+        .transport-county .indent-top .transport-gallery .transport-gallery__switch .btn-next span {
+          display: none; }
+      .transport-county .indent-top .transport-gallery .transport-gallery__switch .btn-prev {
+        left: 70px;
+        bottom: -45px; }
+        .transport-county .indent-top .transport-gallery .transport-gallery__switch .btn-prev span {
+          display: none; }
+    .transport-county .indent-top .dots-box {
+      left: 44%;
+      bottom: -44px; }
   .services .top-indent {
     margin-top: 1px; }
   .services .services-cards {
@@ -402,28 +402,8 @@ h3 {
   .transport-county:after {
     left: 25%;
     width: 50%; }
-  .transport-county .indent-top {
-    margin-top: 70px; }
-    .transport-county .indent-top .transport-gallery {
-      margin-top: 0; }
-      .transport-county .indent-top .transport-gallery .transport-gallery__img {
-        min-height: 290px; }
-        .transport-county .indent-top .transport-gallery .transport-gallery__img img {
-          width: 100%; }
-      .transport-county .indent-top .transport-gallery .transport-gallery__switch .btn-next {
-        top: inherit;
-        bottom: -45px;
-        right: 70px; }
-        .transport-county .indent-top .transport-gallery .transport-gallery__switch .btn-next span {
-          display: none; }
-      .transport-county .indent-top .transport-gallery .transport-gallery__switch .btn-prev {
-        left: 70px;
-        bottom: -45px; }
-        .transport-county .indent-top .transport-gallery .transport-gallery__switch .btn-prev span {
-          display: none; }
-    .transport-county .indent-top .dots-box {
-      left: 44%;
-      bottom: -44px; }
+  .transport-county .indent-top .transport-gallery .transport-gallery__img {
+    margin-left: 50px; }
   .about:after {
     left: 25%;
     width: 50%; } }
