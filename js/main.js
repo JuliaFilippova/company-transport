@@ -88,4 +88,31 @@ $(document).ready(function(){
     //анимируем переход на расстояние - top за 1500 мс
         $('body,html').animate({scrollTop: top}, 1500);
     });
+
+
+    // hamburger
+    $(document).ready(function(){
+		$('#menuToggle').click(function(){
+			$(this).toggleClass('open');
+		});
+	});
+    $('#menuToggle').on('click', function(){
+		$('.hamburger').toggleClass('hamburger-open');
+	});
+
+	// //ГАМБУРГЕР-МЕНЮ
+	// $('#menuToggle').on('click',function() {
+	// 	$('.hamburger-menu').toggle();
+	// 	$(this).toggleClass('closeMenu');
+	// });
+	// $('closeMenu').on('click',function(){
+	// 	$('.hamburger-menu').hide();
+	// });
+	// //закрытие по фону
+	// $('#modal').on('click',function() {
+	// 	$('.menu-modal').hide();
+	// 	$('#modal').hide();
+	// });
 })
+// document.body.style['overflow-y'] = 'hidden';
+// document.body.style.overflowY = "hidden";
