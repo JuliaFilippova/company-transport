@@ -96,9 +96,9 @@ $(document).ready(function(){
 			$(this).toggleClass('open');
 		});
 	});
-    $('#menuToggle').on('click', function(){
-		$('.hamburger').toggleClass('hamburger-open');
-	});
+ //    $('#menuToggle').on('click', function(){
+	// 	$('.hamburger').toggleClass('hamburger-open');
+	// });
 
 	// //ГАМБУРГЕР-МЕНЮ
 	// $('#menuToggle').on('click',function() {

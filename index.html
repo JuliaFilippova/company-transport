@@ -54,7 +54,7 @@
 							<img src="img/logo.png" alt="Компания">
 						</a>
 					</div>
-					<div class="col-xl-3 col-lg-auto col-sm-6 col-3">
+					<div class="col-xl-3 col-lg-auto col-sm-5 d-sm-block d-none">
 						<div class="head-geolocation">
 							<a href="/" class="head-geolocation__link" target="_blank">
 								<i class="fas fa-map-marker-alt"></i>
@@ -85,14 +85,17 @@
 					<!-- HAMBURGER -->
 					<div class="d-lg-none col-auto ml-auto">
 						<div class="burger-button">
-							<div id="menuToggle">
+							<input type="checkbox" class="burger-button__check" id="burger-button__check">
+							<label id="menuToggle" for="burger-button__check">
 								<span></span>
 							    <span></span>
 							    <span></span>
-							</div>
+							</label>
 						</div>
-						<div class="hamburger">
-							<ul class="hamburger-menu">
+					</div>
+					<div class="col-12">
+						<div class="hamburger-menu">
+							<ul class="hamburger-menu__list">
 								<li class="hamburger-menu__link">
 									<a href="#services">Услуги</a>
 								</li>

@@ -88,27 +88,21 @@ h3 {
   .head-nav .burger-button {
     width: 70px;
     height: 70px; }
+    .head-nav .burger-button .burger-button__check {
+      display: none; }
     .head-nav .burger-button #menuToggle {
       width: 70px;
       height: 70px;
-      position: absolute;
-      top: 0;
-      left: 0;
       cursor: pointer;
       transition: all .1s ease-in-out;
       z-index: 33333; }
       .head-nav .burger-button #menuToggle:hover {
         background: rgba(0, 0, 0, 0.2);
         transition: all .2s ease-in-out; }
-      .head-nav .burger-button #menuToggle.open {
-        position: absolute;
-        top: 0;
-        left: -50px;
-        transition: all .5s ease; }
       .head-nav .burger-button #menuToggle span {
         display: block;
         position: absolute;
-        left: 17px;
+        left: 32px;
         opacity: 1;
         width: 35px;
         height: 2px;
@@ -138,33 +132,19 @@ h3 {
       .head-nav .burger-button #menuToggle.open span:nth-child(3) {
         top: 35px;
         transform: rotate(-135deg); }
-  .head-nav .hamburger {
-    position: fixed;
-    right: -190px;
-    width: 250px;
-    height: 100%;
-    top: 0;
-    transition: all .5s ease;
+  .head-nav .hamburger-menu {
+    max-height: 0;
+    visibility: hidden;
+    transition: max-height .5s ease-out;
     z-index: 2222; }
-    .head-nav .hamburger.hamburger-open {
-      right: 0; }
-    .head-nav .hamburger .hamburger-menu {
-      position: absolute;
-      left: 60px;
-      background: #2f343a;
-      width: 200px;
-      height: 100%;
-      padding-top: 114px; }
-      .head-nav .hamburger .hamburger-menu .hamburger-menu__link a {
-        padding: 15px 0;
-        margin-left: 25px;
-        color: #c8a35f;
-        display: block;
-        font-size: 20px;
-        line-height: 40px;
-        text-decoration: none; }
-        .head-nav .hamburger .hamburger-menu .hamburger-menu__link a:hover {
-          color: #fff; }
+    .head-nav .hamburger-menu .hamburger-menu__list .hamburger-menu__link a {
+      padding: 15px 20px 5px;
+      color: #c8a35f;
+      display: block;
+      font-size: 20px;
+      text-decoration: none; }
+      .head-nav .hamburger-menu .hamburger-menu__list .hamburger-menu__link a:hover {
+        color: #fff; }
 
 .header-home {
   background: url("../img/bg-trant.jpg") no-repeat center/cover;
@@ -491,8 +471,6 @@ h3 {
     font-size: 30px; }
   .head-top {
     padding: 8px 0; }
-  .head-nav .head-logo img {
-    max-width: 120px; }
   .head-nav .head-geolocation {
     display: flex;
     align-items: center;
